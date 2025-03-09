@@ -1,0 +1,179 @@
+#_about-root * {
+  padding: 0;
+  margin: 0;
+}
+
+#_about-root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+#_about-root ._about-description-wrapper {
+  width: 100%;
+  gap: 1rem;
+  padding: clamp(1rem, 4vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+}
+@media (min-width: 40rem) {
+  #_about-root ._about-description-wrapper {
+    width: 50%;
+  }
+}
+#_about-root ._about-description-wrapper ._about-description-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.8rem;
+}
+#_about-root ._about-description-wrapper ._about-description-header ._about-span {
+  font-size: clamp(0.8rem, 4vw, 1.4rem);
+  font-weight: bold;
+  color: #FE48AB;
+}
+#_about-root ._about-description-wrapper ._about-description-header ._about-description-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+@media (min-width: 40rem) {
+  #_about-root ._about-description-wrapper ._about-description-header ._about-description-image {
+    display: none;
+  }
+}
+#_about-root ._about-description-wrapper ._about-description-header ._about-title {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  color: #515558;
+}
+#_about-root ._about-description-wrapper ._about-description-desc ._about-description {
+  font-size: clamp(0.8rem, 3vw, 1.1rem);
+  color: #515558;
+  line-height: 150%;
+}
+#_about-root ._about-description-wrapper ._about-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 0.8rem;
+}
+@media (min-width: 40rem) {
+  #_about-root ._about-description-wrapper ._about-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+  }
+}
+@media (min-width: 48rem) {
+  #_about-root ._about-description-wrapper ._about-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+}
+#_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  gap: 0.8rem;
+}
+@media (min-width: 40rem) {
+  #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right {
+    width: 100%;
+  }
+}
+@media (min-width: 48rem) {
+  #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right {
+    width: 50%;
+  }
+}
+#_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left ._about-card-dummy, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right ._about-card-dummy {
+  height: 2rem;
+}
+@media (min-width: 40rem) {
+  #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left ._about-card-dummy, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right ._about-card-dummy {
+    display: none;
+  }
+}
+@media (min-width: 48rem) {
+  #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left ._about-card-dummy, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right ._about-card-dummy {
+    display: block;
+  }
+}
+#_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left ._about-card, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right ._about-card {
+  background-color: #FE48AB;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  gap: 0.8rem;
+}
+#_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left ._about-card ._about-card-title-icon, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right ._about-card ._about-card-title-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.8rem;
+}
+@media (min-width: 40rem) {
+  #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left ._about-card ._about-card-title-icon, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right ._about-card ._about-card-title-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+}
+#_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left ._about-card ._about-card-title-icon ._about-card-icon, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right ._about-card ._about-card-title-icon ._about-card-icon {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: #F0ECDD;
+}
+#_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left ._about-card ._about-card-title-icon ._about-card-title, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right ._about-card ._about-card-title-icon ._about-card-title {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: bold;
+  color: #F0ECDD;
+  line-height: 150%;
+}
+#_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-left ._about-card ._about-card-description, #_about-root ._about-description-wrapper ._about-card-wrapper ._about-card-right ._about-card ._about-card-description {
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  color: #F0ECDD;
+  line-height: 150%;
+}
+#_about-root ._about-image-wrapper {
+  height: 40rem;
+  position: sticky;
+  top: 0;
+  display: none;
+}
+@media (min-width: 40rem) {
+  #_about-root ._about-image-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+}
+#_about-root ._about-image-wrapper img {
+  width: 60%;
+  position: absolute;
+}
+#_about-root ._about-image-wrapper ._about-image-custom {
+  left: 0;
+  z-index: 2;
+}
+#_about-root ._about-image-wrapper ._about-image-grid {
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=about.css.map */
