@@ -1,0 +1,1 @@
+<?= $func->sidebar('event') ?>

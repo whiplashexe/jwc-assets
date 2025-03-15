@@ -1,0 +1,10 @@
+@mixin disflex($direction: row, $justify: center, $align: center)
+  display: flex
+  flex-direction: $direction
+  justify-content: $justify
+  align-items: $align
+
+@mixin disgrid($row: 1, $column: 1)
+  display: grid
+  grid-template-columns: repeat($column, 1fr)
+  grid-template-rows: repeat($row, 1fr)
